@@ -1,0 +1,304 @@
+ html, body {
+  height:100%;
+  width:100%;
+  background-color: #CCC;
+ }
+
+ #main-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+ }
+
+
+.navbar {
+	background: #FFFFFF;
+	display: block;
+	width: 100%;
+	top: 0;
+	position: fixed;
+	opacity: 0.9;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	z-index:10;
+}
+
+
+.navbar  h1 {
+	float: left;
+	padding-left: 50px;
+	margin-top:10px;
+}
+.navbar h1 a {
+	display: block;
+	width: 140px;
+	height: 50px;
+	text-indent: -9999px;
+	background: url(../img/science-expo-logo-no-text.png) center center no-repeat;
+	background-size: contain;
+	opacity: 0.9;
+}
+
+
+.navbar  h1 a:hover {
+	opacity: 0.6;
+}
+
+
+.navbar ul {
+	float: left;
+	padding: 0.8em 0 0 1em;
+	margin: 0;
+}
+.navbar-default .navbar-nav > li  {
+	display: inline;
+	margin: 0 0 0 0;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #33B5E5;
+	font-size: 18px;
+}
+
+.navbar-default .navbar-nav > li > ul   {
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+.navbar-default .navbar-nav > li > ul  a {
+	color: #33B5E5;
+	font-size: 16px;
+	padding: 10px;
+
+}
+
+.navbar-default .navbar-nav > li > ul  a:hover {
+	color: #0099CC;
+	text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #0099CC;
+	text-decoration: none;
+}
+
+
+
+.navbar #context li {
+	display: inline;
+	margin: 0 0 0 0;
+
+}
+.navbar #context li a {
+	color: #99CC00;
+	font-size: 18px;
+	padding: 15px 15px;
+}
+.navbar #context li a:hover {
+	color: #669900;
+	text-decoration: none;
+}
+
+@media (max-width: 767px){
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+color: #33B5E5;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover  {
+	color: #0099CC;
+	text-decoration: none;
+	}
+
+}
+
+@media (min-width: 768px) {
+	.dropdown:hover  .dropdown-menu {
+		display: block;
+	}
+}
+
+@media (max-width: 1050px) {
+	.navbar #context {
+		display: none;
+	}
+}
+
+#content h1 {
+	font-size: 40px;
+	font-weight: 300;
+	margin: 0 0 20px 0;
+}
+
+#content h2 {
+	font-size: 30px;
+	font-weight: 300;
+}
+
+#content p {
+	font-weight: 300;
+}
+
+
+#content {
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    margin-left: auto ;
+    margin-right: auto ;
+    margin-top: 65px;
+
+flex:1;
+  
+  }
+
+
+  #content #content-image h1{
+  	padding-top: 50px;
+  }
+
+#site-footer {
+	background-color: #44c6f1;
+	width:100%;
+	color: #FFF;
+	font-family: 'Maven Pro', sans-serif;
+	padding: 10px;
+	text-align: center;
+        height:40px;
+
+}
+
+.toptext {
+    font-weight:200;
+}
+
+.centerhope {
+    padding: 100px 8%;
+}
+
+
+.cat {
+    line-height: 5;
+    margin-left: 35px;
+    margin-top:-10px;
+
+}
+
+.closeThat {
+    margin-top:350px;
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: rgba(51, 181, 229, 0.53);
+    margin-bottom: 25px;
+}
+
+.bio1 {
+    color:#000;
+    margin-top:-300px;
+    font-size: 18px;
+    font-weight:100;
+}
+
+.bios {
+    background-color:#63666A;
+}
+.points {
+    color:#000;
+    font-family: inherit;
+    margin-left:300px;
+    margin-top:-300px;
+    margin-right:20px;
+    padding-left:10px;
+    padding-top:50px;
+    padding-bottom:50px;
+    font-size: 17px;
+    font-weight:100;
+}
+
+.logo {
+    height:250px;
+    width:250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:10px;
+    
+}
+
+
+.caption {
+    margin-left:60px;
+    margin-top:-40px;
+}
+
+.titler {
+    color:#5c5a5a;
+    text-align: center;
+    padding-top:25px;
+}
+
+.smallertext {
+    padding-top:10px;
+    padding-bottom:35px;
+    text-align: center;
+    color:#434242
+    
+}
+
+.encloseText {
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.closeThat2 {
+    margin-top:350px;
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color:rgba(255, 204, 51, 0.63);
+    margin-bottom: 55px;
+}
+
+.closeThat3 {
+     margin-top:350px;
+    width:75%;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: rgba(119, 229, 51, 0.53);
+    margin-bottom: 25px;
+}
+
+.socialMe {
+    width:60px;
+    height:60px;
+}
+
+.centerSocial {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#fb-root {
+}
+
+.spacingforSocial {
+    padding-top:25px;
+    padding-bottom:25px;
+}
+
+.email {
+    color:#338ce5;
+}
+
+.wantYou {
+    border-radius: 200px;
+    width:300px;
+    height:300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom:10px;
+}

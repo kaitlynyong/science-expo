@@ -1,0 +1,731 @@
+.container {
+	margin: 0; width: 100%;
+	padding: 0;
+}
+
+ html, body {
+  height:100%;
+  width:100%;
+ }
+body{
+overflow-x:hidden;}
+
+#content {
+	height:100%;
+}
+
+.navbar {
+	background: #FFFFFF;
+	display: block;
+	width: 100%;
+	position: fixed;
+	opacity: 0.9;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	z-index:10;
+}
+
+
+.navbar  h1 {
+	float: left;
+	padding-left: 50px;
+	margin-top:10px;
+}
+.navbar h1 a {
+	display: block;
+	width: 140px;
+	height: 50px;
+	text-indent: -9999px;
+	background: url(../img/science-expo-logo-no-text.png) center center no-repeat;
+	background-size: contain;
+	opacity: 0.9;
+}
+
+
+.navbar  h1 a:hover {
+	opacity: 0.6;
+}
+
+
+.navbar ul {
+	float: left;
+	padding: 0.8em 0 0 1em;
+	margin: 0;
+}
+.navbar-default .navbar-nav > li  {
+	display: inline;
+	margin: 0 0 0 0;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #5b5b5b;
+	font-size: 18px;
+}
+
+.navbar-default .navbar-nav > li > ul   {
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+.navbar-default .navbar-nav > li > ul  a {
+	color: #33B5E5;
+	font-size: 16px;
+	padding: 10px;
+
+}
+
+.navbar-default .navbar-nav > li > ul  a:hover {
+	color: #0099CC;
+	text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #0099CC;
+	text-decoration: none;
+}
+
+
+
+.navbar #context li {
+	display: inline;
+	margin: 0 0 0 0;
+
+}
+.navbar #context li a {
+	color: #99CC00;
+	font-size: 18px;
+	padding: 15px 15px;
+}
+.navbar #context li a:hover {
+	color: #669900;
+	text-decoration: none;
+}
+
+@media (max-width: 767px){
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+color: #33B5E5;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover  {
+	color: #0099CC;
+	text-decoration: none;
+	}
+
+}
+
+@media (min-width: 768px) {
+	.dropdown:hover  .dropdown-menu {
+		display: block;
+	}
+}
+
+@media (max-width: 1050px) {
+	.navbar #context {
+		display: none;
+	}
+}
+
+#content h1 {
+	font-size: 40px;
+	font-weight: 300;
+	margin: 0 0 20px 0;
+}
+
+#content h2 {
+	font-size: 30px;
+	font-weight: 300;
+}
+
+#content .colored-title {
+	color: #3BC5F3;
+	text-transform: uppercase;
+}
+
+#content #section-home {
+	background: url(../img/index/home-page-banner.jpg) no-repeat center center;
+	  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	color: #FFF;
+	display: table;
+	font-size: 70px;
+	text-align: center;
+	width: 100%;
+	height: 101%;
+	padding-top:40vh;
+}
+#content #section-home .home-name {
+	letter-spacing: 0.2em; 
+	font-size:0.4em;
+	margin-bottom:-30px;
+	  text-shadow: black 0.03em 0.03em 0.5em;
+}
+
+#content  #section-home h1 {
+	font-size: 25px;
+}
+
+#content  #section-home .colored {
+	font-size: 50px;
+	margin: 0px 0px 20px 0px;
+	text-shadow: black 0.1em 0.1em 0.3em;
+}
+
+#content #section-home h1 {
+	display: table-cell;
+	line-height: 140%;
+	padding: 30px 30px 100px 30px;
+	vertical-align: bottom;
+}
+
+#content  #section-about #provinces {
+	margin:0;
+	margin-top:50px;
+	width:100%;
+	padding: 0px;
+	display:flex;
+}
+
+#content #section-about #provinces .province {
+	color: #FFF;
+	width:100%;
+	background-color:#3bc5f3;
+	padding:10px;
+	margin-bottom:10px;
+	-webkit-transition: color 400ms ease;
+	-moz-transition: color 400ms ease;
+	transition: color 400ms ease;
+	-webkit-transition: background-color 400ms ease;
+	-moz-transition: background-color 400ms ease;
+	transition: background-color 400ms ease;
+	
+}
+	#content #section-about #provinces .province:hover{
+		background-color:#FFF;
+		color:#3bc5f3;
+	}
+#content #section-about #provinces a {
+	color: #FFF;
+}
+
+#content #section-about #provinces a:hover {
+	color: #3BC5F3;
+	text-decoration: none;
+	cursor:pointer;
+	
+}
+
+
+#content .province-modal {
+	width:100%;
+	height:100%;
+	position:fixed;
+	top:0px;
+	bottom:8%;
+	right:0px;
+	left:0px;
+	background-color:rgba(255,255,255,.97);
+	z-index: -1;
+	opacity:0;
+	-webkit-transition: opacity 100ms ease-in;
+	-moz-transition: opacity 100ms ease-in;
+	transition: opacity 100ms ease-in;
+}
+#content .province-modal:target{
+	opacity:1;
+	pointer-events: auto;
+	z-index:999999;
+}
+#content .province-modal div{
+	position: absolute;
+        top: 80px;
+        padding: 8%;
+        padding-top: 50px;
+}
+#content .province-modal p a:hover{
+        background-color:#3bc5f3;
+}
+.close {
+	background: #606061;
+        z-index:999999;
+	color: #FFFFFF;
+	line-height: 20px;
+	position: absolute;
+	right: 8%;
+	text-align: center;
+	top: 60px;
+	width: 40px;
+	height:40px;
+	padding:10px;
+	text-decoration: none;
+	font-weight: bold;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	-webkit-transition: background 400ms ease;
+	-moz-transition: background 400ms ease;
+	transition: background 400ms ease;
+}
+
+.close:hover { background: #FFF; }
+#content #section-mission #first-line {
+	color: #4B9FB7;
+}
+
+#content #section-mission #second-line {
+	text-transform: uppercase;
+}
+
+#content #section-about {
+	padding: 5% 15%;
+        padding-top:8%;
+	text-align: center;
+}
+#content #sign-up{
+	text-align:center;
+	color:#666;
+	padding:4%;
+	width:60%;
+	padding-bottom:10vh;
+	margin:auto;
+}
+#content #sign-up .newsletter{
+	width:100%;
+	height:40px;
+	display:flex;
+}
+#content #sign-up .newsletter-email{
+	text-align:center;
+	color:#333;
+	width:80%;
+	height:100%;
+	border:1px solid #FFF;
+	
+}
+#content #sign-up .newsletter-submit{
+	margin-left:10px;
+  	padding: 0 1.25rem;
+	height:100%;
+	border:2px solid #3bc5f3;
+	color:#FFF;
+	background-color:#3bc5f3;
+	-webkit-transition: backgorund-color 100ms ease-in;
+	-moz-transition: background-color 100ms ease-in;
+	transition: background-color 100ms ease-in;
+}
+	#content #sign-up .newsletter-submit:hover{
+		background-color:#FFF;
+		border-color:#FFF;
+		color:#3bc5f3;
+	}
+#content #enrich,
+#content #empower,
+#content #explore {
+	background-position: center center; 
+	background-repeat: no-repeat; 
+	background-size: cover !important;
+	color: #FFF;
+	height:20vw;
+	padding: 5%;
+	padding-top:15%;
+	box-sizing: border-box;
+	text-align: center;
+	width:100%;
+}
+@media screen and (max-width: 991px)
+{
+     #content #enrich,
+#content #empower,
+#content #explore {
+	  	height:45vw;
+		padding-top:10%;
+	  }
+	  #content #enrich h1,
+#content #empower h1,
+#content #explore h1 {
+	font-size: 42px;
+	margin: 0;
+}
+ #content #enrich h2,
+#content #empower h2,
+#content #explore h2 {
+	font-size: 24px;
+	margin: 0;
+}
+
+}
+
+#content #enrich h1,
+#content #empower h1,
+#content #explore h1 {
+	font-size: 65px;
+	margin: 0;
+}
+
+#content #enrich {
+	background-image: url(../img/index/enrich-section.jpg);
+}
+
+#content #empower {
+	background-image: url(../img/index/empower-section.jpg);
+}
+
+#content #explore {
+	background-image: url(../img/index/explore-section.jpg);
+}
+
+#content #section-programs {
+	background-color: #EEE;
+	overflow: auto;
+	padding: 5%;
+        padding-top: 8%;
+	text-align: center;
+}
+#content #section-programs a:hover {
+	background:none;
+}
+#content #section-programs ul.program-list {
+	float: left;
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+	margin: 0px 3% 0px 0px;
+	width: 100%;
+}
+#content #section-programs ul.program-list p {
+	font-size:13px;
+}
+#content #section-programs ul.program-list li {
+	color: #464645;
+	cursor: pointer;
+	font-size: 25px;
+	width: 250px;
+	height:490px;
+	display:inline-block;
+	border:1px solid #dddddd;
+	background-color:#FFF;
+	list-style-position:inside;
+	-webkit-border-radius: 2px;
+	padding:20px 22px;
+	margin:5px 5px;
+	transition: background-color 0.25s ease-out;
+	vertical-align:bottom;
+}
+	#content #section-programs ul.program-list li:hover {
+		background-color:#3bc5f3;
+		color:#FFF;
+		border:none;
+		box-shadow:2px 2px 8px #CCC;
+		border:1px solid transparent;
+	}
+	#content #section-programs ul.program-list li:hover .conference {
+		background-image: url(../img/index/conference-white.png);
+	}
+	#content #section-programs ul.program-list li:hover .ambassador {
+		background-image: url(../img/index/ambassador-white.png);
+	}
+	#content #section-programs ul.program-list li:hover .peertutoring {
+		background-image: url(../img/index/peertutoring-white.png);
+	}
+	#content #section-programs ul.program-list li:hover .teacheroutreach {
+		background-image: url(../img/index/teacheroutreach-white.png);
+	}
+#content #section-programs ul.program-list .program-content {
+	height:100%;
+	width:100%;
+	text-align:center;
+}
+#content #section-programs ul.program-list li div, p{
+margin: 10px auto;
+}
+#content #section-programs ul.program-list li div{
+	height: 125px;
+	width: 125px;
+
+}
+
+#content #section-programs ul.program-list li .conference{
+	background: url(../img/index/conference.png) no-repeat center center;
+	background-size: contain;
+
+
+}
+
+#content #section-programs ul.program-list li .ambassador{
+	background: url(../img/index/ambassador.png) no-repeat center center;
+		  background-size: contain;
+
+}
+
+#content #section-programs ul.program-list li .peertutoring{
+	background: url(../img/index/peertutoring.png) no-repeat center center;
+		  background-size: contain;
+
+}
+
+#content #section-programs ul.program-list li .teacheroutreach{
+	background: url(../img/index/teacheroutreach.png) no-repeat center center;
+		  background-size: contain;
+
+}
+
+#content #section-programs .tab-content {
+	background: #ededed;
+	display: none;
+	float: left;
+	padding: 15px;
+	text-align: left;
+	width: 55%;
+}
+
+#content #section-programs .tab-content.current {
+	display: inherit;
+}
+#content #counter{
+	background:url(../img/WebsiteBackground.jpg) no-repeat center center;
+	background-size:cover;
+	padding: 4% 8%;
+	text-align:center;
+}
+#content #counter span{
+	color:#FFF;
+	font-size:70px;
+	font-weight:500;
+}
+#content #counter h6{
+	color:#FFF;
+	font-size:20px;
+	font-weight:200;
+}
+#content #section-team {
+	overflow: auto;
+	padding: 5%;
+        padding-top:8%;
+	text-align: center;
+	width: 100%;
+}
+
+#content #section-team h1 {
+	margin-bottom: 30px;
+}
+
+#content #section-team  #ontario-tabs {
+	display: none;
+}
+
+
+#content #section-team .thumbnail {
+	display: inline-block;
+	height: 160px;
+        width:160px;
+	margin: 0px 10px 10px 0px;
+}
+
+#content #section-team .thumbnail .overlay {
+	background: rgba(59, 197, 243, 0.9);
+	color: #FFF;
+	display: table;
+	max-width: 150px;
+	min-height: 150px;
+	min-width: 150px;
+	opacity: 0;
+	position: relative;
+	top: -150px;
+	transition: 0.2s linear;
+}
+
+#content #section-team .thumbnail:hover > .overlay {
+	opacity: 1;
+	transition: 0.2s linear;
+}
+
+#content #section-team .thumbnail > .overlay .overlay-wrap {
+	display: table-cell;
+	margin: 0 auto;
+	max-width: 150px;
+	padding: 0px 5px;
+	vertical-align: middle;
+	width: 90%;
+}
+
+#content #section-team .thumbnail .overlay .name {
+	font-weight: 900;
+}
+
+#content #section-team img {
+	
+}
+
+#content #section-team ul.tabs {
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+
+#content #section-team ul.tabs li.current {
+	color: #4B9FB7;
+}
+
+#content #section-team ul.tabs li {
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px 30px 15px;
+	cursor: pointer;
+}
+
+
+#content #section-partners {
+	text-align: center;
+	padding:5%;
+	padding-top:8%;
+	background-color:#EEE;
+}
+
+#content #section-partners p, #content #section-about p {
+	display: inline-block;
+	margin: 30px 0 0 0;
+}
+
+#content #section-partners img {
+	height: 60px;
+	margin: 0 15px 0 0;
+}
+
+#content #section-partners img:hover {
+	opacity: 0.5;
+}
+#content #section-partners a:hover {
+	background:none;
+}
+
+
+#content #section-partners #affiliates {
+	margin: 60px 0 0 0;
+}
+
+#content #section-contact{
+	padding:5%;
+	padding-top:8%;
+	text-align:center;
+	background-color:#EEE;
+	border:1px solid #EEE;
+}
+#content #section-contact .contact-form{
+	width:70%;
+	margin:auto;
+	padding:20px;
+}
+#content #section-contact .contact-field{
+	width:100%;
+	height:40px;
+	margin:5px 0;
+  color: #333;
+  padding: 0 5rem 0 1.25rem;
+  border: 1px solid #CCC;
+}
+#content #section-contact .contact-form .contact-message{
+	width:100%;
+	height:140px;
+	margin: 5px 0;
+	  color: #333;
+  padding: 1rem 5rem 0 1.25rem;
+  border: 1px solid #CCC;
+}
+#section-contact .contact-form .contact-submit{
+	margin-left:10px;
+  	padding: 1rem 10%;
+	margin-top:20px;
+	height:100%;
+	border:2px solid #3bc5f3;
+	color:#FFF;
+	background-color:#3bc5f3;
+	-webkit-transition: backgorund-color 100ms ease-in;
+	-moz-transition: background-color 100ms ease-in;
+	transition: background-color 100ms ease-in;
+}
+	#section-contact .contact-form .contact-submit:hover{
+		background-color:#FFF;
+		border-color:#3bc5f3;
+		color:#3bc5f3;
+	}
+.site-footer{
+	padding:5%;
+	padding-top:3%;
+	padding-bottom:1%;
+	background-color: #3BC5F3;
+	color: #FFF;
+}
+.site-footer a{
+	color:#FFF;
+	display:block;
+	margin-top:11px;
+	margin-bottom:10px;
+	padding:5px;
+	width:150px;
+	-webkit-transition: backgorund-color 100ms ease-in;
+	-moz-transition: background-color 100ms ease-in;
+	transition: background-color 100ms ease-in;
+	
+}
+.site-footer a:hover{
+	color:#3BC5F3;
+	background-color:#FFF;
+}
+#content .site-footer .newsletter-email{
+	text-align:left;
+	color:#333;
+	width:70%;
+	height:100%;
+	padding:0 2rem 0 1.25rem;
+	border:1px solid #FFF;
+	font-size: 16px;
+}
+#content .site-footer .newsletter{
+	margin-top:40px;
+	margin-bottom:30px;
+	width:90%;
+	height:40px;
+	display:flex;
+}
+#content .site-footer .newsletter-submit {
+  padding: 0 1.25rem;
+  height: 100%;
+  border: 2px solid #FFF;
+  color: #FFF;
+  margin-left:10px;
+  background-color: #3bc5f3;
+  -webkit-transition: backgorund-color 100ms ease-in;
+	-moz-transition: background-color 100ms ease-in;
+	transition: background-color 100ms ease-in;
+}
+	#content .site-footer .newsletter-submit:hover{
+		background-color:#FFF;
+		color:#3bc5f3;
+	}
+@media screen and (max-width: 767px)
+{
+      #content .site-footer .newsletter-submit {
+	  	font-size:14px;
+		width:80px;
+		padding:0 0.5rem;
+	  }
+}
+@media screen and (max-width: 991px)
+{
+	  #content .site-footer .container{
+	  	margin:0;
+		text-align:center;
+	  }
+	  #content .site-footer .newsletter {
+		  display:inline-block;
+	  }
+	  .site-footer a{
+		  margin:auto;
+		  width:150px;
+	  }
+	  .site-footer{
+		  text-align:center;
+	  }
+}

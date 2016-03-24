@@ -1,0 +1,11 @@
+<html><head><title>404 Page Not Found</title></head>
+<body bgcolor=white>
+<h1>404 Page Not Found</h1>
+
+The page <!--#echo var="REQUEST_URI" --> does not currently exist. <br>
+<br>
+Some of the site is currently being transitioned over towards a newer system, which may cause some pages to be down temporary.<br>
+<br>
+If you have any concern, please email info@science-expo.org.
+
+</body></html>

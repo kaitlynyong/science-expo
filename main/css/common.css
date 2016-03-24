@@ -1,0 +1,452 @@
+@import "http://fonts.googleapis.com/css?family=Oswald";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+	border: 0;
+	font-family: inherit;
+	font-size: 100%;
+	font-style: inherit;
+	font-weight: inherit;
+	margin: 0;
+	outline: 0;
+	padding: 0;
+	vertical-align: baseline;
+}
+
+html {
+	font-size: 62.5%; /* Corrects text resizing oddly in IE6/7 when body font-size is set using em units http://clagnut.com/blog/348/#c790 */
+	overflow-y: scroll; /* Keeps page centered in all browsers regardless of content height */
+	-webkit-text-size-adjust: 100%; /* Prevents iOS text size adjust after orientation change, without disabling user zoom */
+	-ms-text-size-adjust:     100%; /* www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+}
+
+*,
+*:before,
+*:after { /* apply a natural box layout model to all elements; see http://www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+	-webkit-box-sizing: border-box; /* Not needed for modern webkit but still used by Blackberry Browser 7.0; see http://caniuse.com/#search=box-sizing */
+	-moz-box-sizing:    border-box; /* Still needed for Firefox 28; see http://caniuse.com/#search=box-sizing */
+	box-sizing:         border-box;
+}
+
+body {
+	background: #FFF; /* Fallback for when there is no custom background color defined. */
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+table { 
+	border-collapse: separate;
+	border-spacing: 0;
+}
+a{
+	color:#3BC5F3;
+	-webkit-transition: backgorund-color 100ms ease-in;
+	-moz-transition: background-color 100ms ease-in;
+	transition: background-color 100ms ease-in;
+}
+a:focus {
+	outline: thin dotted;
+	
+}
+
+a:hover,
+a:active {
+	outline: 0;
+	color:#FFF;
+	text-decoration:none;
+}
+a:active{
+	background-color:#3BC5F3;
+}
+
+a img {
+	border: 0;
+}
+::-moz-selection{ /* Code for Firefox */
+    color: white;
+    background: #3BC5F3;
+}
+::selection{
+    color: white;
+    background: #3BC5F3;
+}
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
+body,
+button,
+input,
+select,
+textarea {
+	color: #404040;
+	font-family: 'Maven Pro', sans-serif;
+	font-size: 16vw;
+	font-size: 1.6rem;
+	line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	clear: both;
+	font-family: 'Oswald', sans-serif;
+}
+span{
+	font-family: 'Oswald', sans-serif;
+}
+h1{
+	font-size:70px;
+}
+h2{
+	font-size:42px;
+	font-family:'Maven Pro', sans-serif;
+}
+h3{
+	font-size:32px;
+}
+h4{
+	font-size:24px;
+}
+h5{
+	
+}
+p {
+	font-family: 'Maven Pro', sans-serif;
+	font-size:16px;
+	font-weight:200;
+}
+
+.colored {
+	color: #3BC5F3;
+}
+
+b,
+strong {
+	font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+	font-style: italic;
+}
+
+blockquote {
+	margin: 0 1.5em;
+}
+
+address {
+	margin: 0 0 1.5em;
+}
+
+pre {
+	background: #eee;
+	font-family: "Courier 10 Pitch", Courier, monospace;
+	font-size: 15px;
+	font-size: 1.5rem;
+	line-height: 1.6;
+	margin-bottom: 1.6em;
+	max-width: 100%;
+	overflow: auto;
+	padding: 1.6em;
+}
+
+/*--------------------------------------------------------------
+Elements
+--------------------------------------------------------------*/
+hr {
+	background-color: #ccc;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul,
+ol {
+	margin: 0 0 1.5em 3em;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+	margin: 0;
+}
+
+table {
+	margin: 0 0 1.5em;
+	width: 100%;
+}
+
+th {
+	font-weight: bold;
+}
+
+/*--------------------------------------------------------------
+Alignments
+--------------------------------------------------------------*/
+.alignleft {
+	display: inline;
+	float: left;
+	margin-right: 1.5em;
+}
+
+.alignright {
+	display: inline;
+	float: right;
+	margin-left: 1.5em;
+}
+
+.aligncenter {
+	clear: both;
+	display: block;
+	margin: 0 auto;
+}
+
+/*--------------------------------------------------------------
+Nav Bar
+---------------------------------------------------------------*/
+
+.navbar {
+	background: #FFFFFF;
+	display: block;
+	width: 100%;
+	position: fixed;
+	opacity: 0.9;
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+	border-radius: 0px;
+	z-index: 100;
+}
+
+
+.navbar  h1 {
+	float: left;
+	padding-left: 50px;
+	margin-top:10px;
+}
+.navbar h1 a {
+	display: block;
+	width: 140px;
+	height: 50px;
+	text-indent: -9999px;
+	background: url(../img/science-expo-logo-no-text.png) center center no-repeat;
+	background-size: contain;
+	opacity: 0.9;
+}
+
+
+.navbar  h1 a:hover {
+	opacity: 0.6;
+}
+
+.navbar ul {
+	float: left;
+	padding: 0.8em 0 0 1em;
+	margin: 0;
+}
+.navbar-default .navbar-nav > li  {
+	display: inline;
+	margin: 0 0 0 0;
+}
+.navbar-default .navbar-nav > li > a {
+	color: #33B5E5;
+	font-size: 18px;
+}
+
+.navbar-default .navbar-nav > li > ul   {
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+
+.navbar-default .navbar-nav > li > ul  a {
+	color: #33B5E5;
+	font-size: 16px;
+	padding: 10px;
+
+}
+
+.navbar-default .navbar-nav > li > ul  a:hover {
+	color: #0099CC;
+	text-decoration: none;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+	color: #0099CC;
+	text-decoration: none;
+}
+
+.navbar #context li {
+	display: inline;
+	margin: 0 0 0 0;
+
+}
+.navbar #context li a {
+	color: #5b5b5b;
+	font-size: 18px;
+	padding: 15px 15px;
+}
+.navbar #context li a:hover {
+	color: #209cca;
+	text-decoration: none;
+}
+
+@media (max-width: 767px){
+.navbar-default .navbar-nav .open .dropdown-menu>li>a {
+color: #33B5E5;
+}
+
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:hover  {
+	color: #0099CC;
+	text-decoration: none;
+	}
+
+}
+
+@media (min-width: 768px) {
+	.dropdown:hover  .dropdown-menu {
+		display: block;
+	}
+}
+
+@media (max-width: 900px) {
+	.navbar #context {
+		display: none;
+	}
+}
+
+.site-footer .site-info {
+	background-color: #44c6f1;
+	color: #FFF;
+	font-family: 'Maven Pro', sans-serif;
+	padding: 10px;
+	text-align: center;
+}
+.site-footer{
+	padding:5%;
+	padding-top:3%;
+	padding-bottom:1%;
+	background-color: #3BC5F3;
+	color: #FFF;
+}
+.site-footer a{
+	color:#FFF;
+	display:block;
+	margin-top:11px;
+	margin-bottom:10px;
+	padding:5px;
+	width:150px;
+	-webkit-transition: backgorund-color 100ms ease-in;
+	-moz-transition: background-color 100ms ease-in;
+	transition: background-color 100ms ease-in;
+	
+}
+.site-footer a:hover{
+	color:#3BC5F3;
+	background-color:#FFF;
+}
+.site-footer .newsletter-email{
+	text-align:left;
+	color:#333;
+	width:70%;
+	height:100%;
+	padding:0 2rem 0 1.25rem;
+	border:1px solid #FFF;
+	font-size: 16px;
+}
+.site-footer .newsletter{
+	margin-top:40px;
+	margin-bottom:30px;
+	width:90%;
+	height:40px;
+	display:flex;
+}
+.site-footer .newsletter-submit {
+  padding: 0 1.25rem;
+  height: 100%;
+  border: 2px solid #FFF;
+  color: #FFF;
+  margin-left:10px;
+  background-color: #3bc5f3;
+  -webkit-transition: backgorund-color 100ms ease-in;
+	-moz-transition: background-color 100ms ease-in;
+	transition: background-color 100ms ease-in;
+}
+	#content .site-footer .newsletter-submit:hover{
+		background-color:#FFF;
+		color:#3bc5f3;
+	}
+@media screen and (max-width: 767px)
+{
+      #content .site-footer .newsletter-submit {
+	  	font-size:14px;
+		width:80px;
+		padding:0 0.5rem;
+	  }
+}
+@media screen and (max-width: 991px)
+{
+	  #content .site-footer .container{
+	  	margin:0;
+		text-align:center;
+	  }
+	  #content .site-footer .newsletter {
+		  display:inline-block;
+	  }
+	  .site-footer a{
+		  margin:auto;
+		  width:150px;
+	  }
+	  .site-footer{
+		  text-align:center;
+	  }
+}
