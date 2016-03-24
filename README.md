@@ -1,1 +1,1 @@
-# science-expo
+### [Science Expo](http://science-expo.org/)
